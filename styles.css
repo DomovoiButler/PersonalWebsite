@@ -1,8 +1,26 @@
 /*Root Properties*/
+/*MS-DOS had a 16 colour limit to its palette*/
 :root {
     --main: #640000;
     --hover: #797270;
     --head: #F5F5F5;
+
+    --colour-1: ;
+    --colour-2: ;
+    --colour-3: ;
+    --colour-4: ;
+    --colour-5: ;
+    --colour-6: ;
+    --colour-7: ;
+    --colour-8: ;
+    --colour-9: ;
+    --colour-10: ;
+    --colour-11: ;
+    --colour-12: ;
+    --colour-13: ;
+    --colour-14: ;
+    --colour-15: ;
+    --colour-16: ;
 }
 
 /*Change Defaults*/
@@ -36,10 +54,30 @@ nav {
 
 .nav-list a {
     display: block;
-    font-size: 2.2rem;
-    padding: 2rem;
+    font-size: 1.8rem;
+    padding: 0.8rem;
 }
 
 .nav-list a:hover {
     background: var(--hover);
+}
+
+.nav_box {
+    display: block;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 2.5%;
+    position: fixed;
+    width: 84%;
+    height: 75%;
+    background: var(--hover);
+    box-shadow: 8px 10px 4px rgba(0, 0, 0, 0.25);
+    z-index: 11;
+    visibility: hidden;
+}
+
+/*Testing area*/
+
+.nav_button {
+    margin-top: 200px;
 }

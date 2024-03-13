@@ -10,7 +10,7 @@
     <nav>
       <ul class="nav-list">
         <li>
-          <a href="">About</a>
+          <a onclick="Nav_view()">About</a>
         </li>
         <li>
           <a href="">Projects</a>
@@ -21,8 +21,16 @@
       </ul>
     </nav>
 
-    
+    <div class="nav_box">
 
+    </div>
+
+
+    <script>
+      function Nav_view() {
+        document.querySelector('.nav_box').style.visibility = 'visible';
+      }
+    </script>
 
   </body>
 
