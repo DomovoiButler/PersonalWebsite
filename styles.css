@@ -1,32 +1,49 @@
 /*Root Properties*/
 /*MS-DOS had a 16 colour limit to its palette*/
 :root {
-    --main: #640000;
-    --hover: #797270;
-    --head: #F5F5F5;
 
-    --colour-1: ;
-    --colour-2: ;
-    --colour-3: ;
-    --colour-4: ;
-    --colour-5: ;
-    --colour-6: ;
-    --colour-7: ;
-    --colour-8: ;
-    --colour-9: ;
-    --colour-10: ;
-    --colour-11: ;
-    --colour-12: ;
-    --colour-13: ;
-    --colour-14: ;
-    --colour-15: ;
-    --colour-16: ;
+    --col-1: black;
+    --col-2: gray;
+    --col-3: maroon;
+    --col-4: red;
+    --col-5: green;
+    --col-6: lime;
+    --col-7: olive;
+    --col-8: yellow;
+    --col-9: navy;
+    --col-10: blue;
+    --col-11: purple;
+    --col-12: fuchsia;
+    --col-13: teal;
+    --col-14: aqua;
+    --col-15: silver;
+    --col-16: white;
+}
+
+/*Fonts*/
+@font-face {
+    font-family: font-1;
+    src: url("assets/fonts/ttf - Ac (aspect-corrected)/Ac437_IBM_3270pc.ttf");
+}   
+
+@font-face {
+    font-family: font-2;
+    src: url("assets/fonts/ttf - Ac (aspect-corrected)/Ac437_IBM_DOS_ISO8.ttf");
 }
 
 /*Change Defaults*/
+html {
+    font-family: font-1;
+}
+
+p {
+    font-family: font-2;
+    font-weight: bold;
+}
+
 a {
     text-decoration: none;
-    color: var(--head);
+    color: var(--col-16);
 }
 
 ul {
@@ -42,7 +59,7 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    background: var(--main);
+    background: var(--col-3);
     box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
     z-index: 10;
 }
@@ -59,7 +76,7 @@ nav {
 }
 
 .nav-list a:hover {
-    background: var(--hover);
+    background: var(--col-2);
 }
 
 .nav_box {
@@ -70,14 +87,16 @@ nav {
     position: fixed;
     width: 84%;
     height: 75%;
-    background: var(--hover);
+    background: var(--col-2);
     box-shadow: 8px 10px 4px rgba(0, 0, 0, 0.25);
     z-index: 11;
     visibility: hidden;
 }
 
-/*Testing area*/
+/*Banner*/
 
-.nav_button {
-    margin-top: 200px;
+
+/*Testing area*/
+.Head-banner {
+    margin-top: 300px;
 }
