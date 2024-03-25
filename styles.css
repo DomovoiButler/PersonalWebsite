@@ -20,59 +20,80 @@
     --col-16: white;
 }
 
-/*Fonts*/
+/*Font Assets*/
 @font-face {
-    font-family: font-1;
+    font-family: Head;
     src: url("assets/fonts/ttf - Ac (aspect-corrected)/Ac437_IBM_3270pc.ttf");
 }   
 
 @font-face {
-    font-family: font-2;
-    src: url("assets/fonts/ttf - Ac (aspect-corrected)/Ac437_IBM_DOS_ISO8.ttf");
+    font-family: Console;
+    src: url("assets/fonts/ttf - Ac (aspect-corrected)/Ac437_Cordata_PPC-21.ttf");
 }
 
 /*Change Defaults*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
 html {
-    font-family: font-1;
+    font-family: Head;
+    font-size: 62.5%; /* 62.5% of rem = 10px */
+    color: var(--col-6);
+    background-color: var(--col-1);
+}
+
+h1 {
+    font-size: 5rem;
 }
 
 p {
-    font-family: font-2;
-    font-weight: bold;
+    font-family: Console;
+    font-size: 2.8rem;
 }
 
 a {
     text-decoration: none;
-    color: var(--col-16);
+    color: var(--col-6);
 }
 
 ul {
     list-style: none;
 }
 
+/*Responsive changes*/
+
+h1, p, .nav-list {
+    display: flex;
+    padding-left: 12%;
+    padding-right: 12%;
+}
 
 /*Navigation*/
 nav {
     display: flex;
     justify-content: flex-end;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: var(--col-3);
+    position: sticky;
+    top: 1%;
+    left: 1%;
+    width: 98%;
+    background-color: var(--col-1);
+    border: solid;
+    border-color: var(--col-6);
     box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
     z-index: 10;
 }
 
-.nav-list {
-    display: flex;
-    margin-right: 2rem;
-}
-
 .nav-list a {
     display: block;
-    font-size: 1.8rem;
-    padding: 0.8rem;
+    font-size: 3.2rem;
+    padding: 1.2rem;
 }
 
 .nav-list a:hover {
@@ -87,16 +108,17 @@ nav {
     position: fixed;
     width: 84%;
     height: 75%;
-    background: var(--col-2);
+    background: var(--col-15);
     box-shadow: 8px 10px 4px rgba(0, 0, 0, 0.25);
     z-index: 11;
     visibility: hidden;
 }
 
 /*Banner*/
-
+.Head-banner {
+    background-color: var(--col-1);
+    height: 10000px;
+    margin-top: 200px;
+}
 
 /*Testing area*/
-.Head-banner {
-    margin-top: 300px;
-}
