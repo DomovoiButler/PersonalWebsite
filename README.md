@@ -35,3 +35,12 @@
 - "*" selector just let me get rid of that padding and the bloat around the menu selections.
 - Changed the navbar to "sticky" to margin more accurately
 - changed nav-bar to a retro solid border
+
+*17/04/2024
+- Tried to justify nav content left and right, won't leave space in the middle and treat left and right ul as seperate elements.
+
+*08/05/2024
+- Fixed Nav bar positioning with "float" attribute.
+- Seperated the padding for the nav bar elements and the rest of the text elements into two seperate attribute modifiers.
+- Start next section. Need to get this done for the online course material.
+- Added the id tags to each section and added them as hrefs on the nav bar links. Will need to add smooth scroll to those.

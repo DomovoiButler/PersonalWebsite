@@ -8,12 +8,19 @@
   <body>
 
     <nav>
-      <ul class="nav-list">
+
+      <ul id="left-nav" class="nav-list">
         <li>
-          <a onclick="Nav_view()">About</a>
+          <a onclick="Nav_view()">(D.O.M.O.V.O.I)</a>
+        </li>
+      </ul>
+
+      <ul id="right-nav" class="nav-list">
+        <li>
+          <a href="#Head-banner">About</a>
         </li>
         <li>
-          <a href="">Projects</a>
+          <a href="#Projects">Projects</a>
         </li>
         <li>
           <a href="">Contact</a>
@@ -26,11 +33,87 @@
     </nav>
 
 
-    <section class="Head-banner">
+    <section class="Head-banner" id="Head-banner">
+
       <h1>This is a Portfolio Website</h1>
-      <p>Welcome to the System Administrator Integrated Message System (SAIMS). Fill out the fields below and press the SUBMIT button. 
-      The system administrator (SYSADM) will respond to your query after an appropriate amount of quiet contemplation. 
-      Thank you for contacting the System Administrator's Office.</p>
+
+      <p>Welcome to my portfolio website, designed around the theme of Operating System Interfaces of the past. 
+        <br>
+        This site will be used to demonstrate projects around my qualifications and eventually projects related my platform: 
+        <br> <br>
+        Dynamic Operations Management Optimised Visual Overlay Interface (D.O.M.O.V.O.I)
+      </p>
+      
+    </section>
+
+    <section class="Projects-section" id="Projects">
+
+      <h2>Project Gallery</h2>
+
+      <div class="project-grid">
+
+        <a href="" target="_blank">
+
+          <img src="assets/imgs/H2.png" alt="health" />
+
+          <p>
+            <span class="code">&lt;</span>
+              Tribute Page
+            <span class="code">&#47;&gt;</span>
+          </p>
+          
+        </a>
+
+        <a href="" target="_blank">
+
+          <img src="assets/imgs/salmon-of-knowledge.png" alt="Academic" />
+
+          <p>
+            <span class="code">&lt;</span>
+              Tribute Page
+            <span class="code">&#47;&gt;</span>
+          </p>
+          
+        </a>
+
+        <a href="" target="_blank">
+
+          <img src="assets/imgs/web.png" alt="Social" />
+
+          <p>
+            <span class="code">&lt;</span>
+              Tribute Page
+            <span class="code">&#47;&gt;</span>
+          </p>
+          
+        </a>
+
+        <a href="" target="_blank">
+
+          <img src="assets/imgs/Bear VS Bull.png" alt="Financial" />
+
+          <p>
+            <span class="code">&lt;</span>
+              Tribute Page
+            <span class="code">&#47;&gt;</span>
+          </p>
+          
+        </a>
+
+        <a href="" target="_blank">
+
+          <img src="assets/imgs/Atlas.png" alt="Misc" />
+
+          <p>
+            <span class="code">&lt;</span>
+              Tribute Page
+            <span class="code">&#47;&gt;</span>
+          </p>
+          
+        </a>
+
+      </div>
+
     </section>
 
     <script>
