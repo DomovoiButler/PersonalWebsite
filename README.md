@@ -44,3 +44,28 @@
 - Seperated the padding for the nav bar elements and the rest of the text elements into two seperate attribute modifiers.
 - Start next section. Need to get this done for the online course material.
 - Added the id tags to each section and added them as hrefs on the nav bar links. Will need to add smooth scroll to those.
+
+*09/05/2024
+- Added grid function to project list.
+- Read up on grid and fr unit in CSS.
+
+*16/05/2024
+- Working on Project section again. Classes sudo:
+
+    Section "Projects-section"
+
+        div "project-grid"
+
+            a
+            
+                img/
+
+                p
+                    span "code" /
+                /p
+
+            /a
+        
+        /div
+
+    /section
